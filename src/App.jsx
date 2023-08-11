@@ -4,10 +4,10 @@ import Sidebar from './components/shared/Sidebar'
 
 function App() {
   return (
-    <div className=' bg-red-400'>
+    <div className=' bg-gray-400 w-full main-h-screen'>
       <Sidebar />
     </div>
-  )
+  );
 }
 
 export default App
