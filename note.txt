@@ -1,3 +1,3 @@
 💪 Diseño de tienda en línea con React JS y Tailwind CSS totalmente responsivo
-minuto: 44:49
+minuto: 1:06:48
 link: https://www.youtube.com/watch?v=jGBE75m6YOE
