@@ -1,6 +1,6 @@
 import React from 'react'
 import logo from '../../assets/online-shop.webp'
-import { SlHome } from 'react-icons/sl';
+import { SlHome, SlFire, SlPieChart, SlEnvolope, SlBell, SlSettings, SlLogout } from 'react-icons/sl';
 
 function Sidebar() {
   return (
@@ -9,11 +9,26 @@ function Sidebar() {
             <li>
             <img className='items-center my-2 p-4' src={logo} alt="Logo" />
             </li>
-            <li className=' hover:bg-gray-700 p-4 rounded-tl-xl rounded-bl-xl'>
-                <a className=' text-white p-4 flex justify-center bg-cyan-600 rounded-xl' href=""><SlHome className=' text-2xl' /></a>
+            <li className=' bg-gray-700 p-4 rounded-tl-xl rounded-bl-xl'>
+                <a className=' bg-cyan-600 group-hover:text-white p-4 flex justify-center text-white rounded-xl transition-colors' href=""><SlHome className=' text-2xl' /></a>
             </li>
-            <li className=' hover:bg-gray-700 p-4 rounded-tl-xl rounded-bl-xl group'>
-                <a className=' group-hover:bg-cyan-600 group-hover:text-white p-4 flex justify-center text-white rounded-xl' href=""><SlHome className=' text-2xl' /></a>
+            <li className=' hover:bg-gray-700 p-4 rounded-tl-xl rounded-bl-xl group transition-colors'>
+                <a className=' group-hover:bg-cyan-600 group-hover:text-white p-4 flex justify-center text-white rounded-xl transition-colors' href=""><SlFire className=' text-2xl' /></a>
+            </li>
+            <li className=' hover:bg-gray-700 p-4 rounded-tl-xl rounded-bl-xl group transition-colors'>
+                <a className=' group-hover:bg-cyan-600 group-hover:text-white p-4 flex justify-center text-white rounded-xl transition-colors' href=""><SlPieChart className=' text-2xl' /></a>
+            </li>
+            <li className=' hover:bg-gray-700 p-4 rounded-tl-xl rounded-bl-xl group transition-colors'>
+                <a className=' group-hover:bg-cyan-600 group-hover:text-white p-4 flex justify-center text-white rounded-xl transition-colors' href=""><SlEnvolope className=' text-2xl' /></a>
+            </li>
+            <li className=' hover:bg-gray-700 p-4 rounded-tl-xl rounded-bl-xl group transition-colors'>
+                <a className=' group-hover:bg-cyan-600 group-hover:text-white p-4 flex justify-center text-white rounded-xl transition-colors' href=""><SlBell className=' text-2xl' /></a>
+            </li>
+            <li className=' hover:bg-gray-700 p-4 rounded-tl-xl rounded-bl-xl group transition-colors'>
+                <a className=' group-hover:bg-cyan-600 group-hover:text-white p-4 flex justify-center text-white rounded-xl transition-colors' href=""><SlSettings className=' text-2xl' /></a>
+            </li>
+            <li className=' hover:bg-gray-700 p-4 rounded-tl-xl rounded-bl-xl group transition-colors'>
+                <a className=' group-hover:bg-cyan-600 group-hover:text-white p-4 flex justify-center text-white rounded-xl transition-colors' href=""><SlLogout className=' text-2xl' /></a>
             </li>
         </ul>
     </div>
