@@ -2,9 +2,10 @@ import React from 'react'
 import logo from '../../assets/online-shop.webp'
 import { SlHome, SlFire, SlPieChart, SlEnvolope, SlBell, SlSettings, SlLogout } from 'react-icons/sl';
 
-function Sidebar() {
+const Sidebar = (props) => {
+    const {showMenu} = props;
   return (
-    <div className='bg-gray-800 fixed lg:left-0 top-0 w-28 h-full flex flex-col justify-between py-6 rounded-tr-xl rounded-br-xl -left-full'>
+    <div className={`bg-gray-800 fixed lg:left-0 top-0 w-28 h-full flex flex-col justify-between py-6 rounded-tr-xl rounded-br-xl z-50 transition-all ${showMenu ? "left-0" : "-left-full"}`}>
         <div>
             <ul className='pl-4'>
                 <li>
