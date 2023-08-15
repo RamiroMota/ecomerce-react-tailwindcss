@@ -37,17 +37,28 @@ function App() {
       </nav>
       <main className=' lg:pl-28 grid-cols-1 lg:grid-cols-8'>
         <div className=' lg:col-span-6'>
+          {/* Header */}
           <header className='p-4'>
-            <div>
-              <h1 className='text-xl text-gray-300'>Nombre del restaurante</h1>
-              <p className=' text-gray-500'>Lunes 14 de Agosto del 2023</p>
-            </div>
-            <form action="">
-              <div className=' w-full relative'>
-                <SlMagnifier className=' text-gray-100 absolute left-3 top-1/2 -translate-y-1/2 runde'/>
-                <input className=' bg-gray-800 rounded-full w-full py-2 pl-9 pr-4 text-gray-300 outline-none' type="text" />
+            {/* title & search */}
+            <div className=' flex flex-col gap-4'>
+              <div>
+                <h1 className='text-xl text-gray-200'>Nombre del restaurante</h1>
+                <p className=' text-gray-400'>Lunes 14 de Agosto del 2023</p>
               </div>
-            </form>
+              <form action="">
+                <div className=' w-full relative'>
+                  <SlMagnifier className=' text-gray-100 absolute left-3 top-1/2 -translate-y-1/2 runde'/>
+                  <input className=' bg-gray-800 rounded-full w-full py-2 pl-10 pr-4 text-gray-300 outline-none' type="text" placeholder='¿Qué deseas buscar?'/>
+                </div>
+              </form>
+            </div>
+            {/* Tabas */}
+            <nav className=' text-gray-300 flex items-center justify-between border-b '>
+              <a href="" className=' relative py-2 pr-4 before:w-1/2 before:h-1 before:absolute before:bg-cyan-400 before:left-0 before:-bottom-[6px] before:rounded-full text-cyan-400'>Hot Dishes</a>
+              <a href="" className=' py-3 pr-4'>Cold Dishes</a>
+              <a href="" className=' py-3 pr-4'>Soup</a>
+              <a href="" className=' py-3 pr-4'>Grill</a>
+            </nav>
           </header>
         </div>
         <div className=' lg:col-span-2 bg-red-400 fixed lg:static right-0'>carrito</div>
